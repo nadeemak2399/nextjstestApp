@@ -392,7 +392,7 @@ ul.container-list li.container-list-item {
   margin-top: 50px;
 }
 .hero-banner-bg-img {
-  background-image: url("/assets/emb.jpg");
+  background-image: url("/assets/emb.webp");
   height: 500px;
   background-position: center;
   background-size: cover;
