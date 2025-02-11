@@ -920,14 +920,17 @@ ul.container-list li {
   padding: 5px;
 }
 .hero-mask-content h1 {
-  font-size: 35px;
+  font-size: 25px;
 }
 .hero-mask-content p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
 }
+a.btn-herobanner {
+  padding: 5px 15px;
+}
 .hero-banner-bg-img {
-  height: 300px;
+  height: 225px;
 }
 .patches-benefits {
   padding: 15px 0px;
