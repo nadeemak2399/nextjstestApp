@@ -214,7 +214,6 @@ span.patch-order-title {
 }
 .container-loadding img {
   height: 45px;
-  height: auto;
 }
 .thumbnail-image-container {
   display: flex;
@@ -955,9 +954,12 @@ a.btn-herobanner {
 }
 
 @media (max-width: 580px){
+  .thumbnail-image-container img {
+    width: 100px;
+}
   .col-cu-12{
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 auto !important;
+    width: 100% !important;
   }
   .patch-type-container .col-6{
     padding: 0 5px;
@@ -984,7 +986,7 @@ a.btn-herobanner {
   }
   .col-cu-4{
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33.33333333% !important;
     margin-bottom: 12px;
   }
   .patch-quantity-container {

@@ -1,9 +1,17 @@
 import { NextResponse } from 'next/server';
 const nodemailer = require('nodemailer');
 
+
+
+
 export async function POST(request) {
+
+    
+
     try {
         const { quotePageType, backingType, checkPatchQuantity, patchHeight, patchWidth, sizeUnit, replacefullName, userEmail, replaceuserPhone, replaceuserShipAddress, replaceuserOrderDetails, checkFileNamefiles } = await request.json();
+
+        
 
         const transporter = nodemailer.createTransport({
             service: "gmail",
@@ -32,8 +40,13 @@ export async function POST(request) {
                 <p><b>Comments: </b>${replaceuserOrderDetails}</p>
                 <p>Best Regards</p>
                 `,
+                attachments: [
+                    {
+                        filename: `${checkFileNamefiles === 'No Image Uploaded' ? 'nofile.jpg'  : checkFileNamefiles  }`,
+                        path: `${checkFileNamefiles === 'No Image Uploaded' ? process.cwd()+"/public/uploads/nofile.jpg"  : process.cwd() + "/public/uploads/"+ checkFileNamefiles}`
+                    },
+                ],
         }
-
         await transporter.sendMail(mailOption)
 
         return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })

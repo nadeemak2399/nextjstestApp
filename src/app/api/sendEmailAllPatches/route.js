@@ -33,6 +33,12 @@ export async function POST(request) {
                 <p><b>Comments: </b>${replaceuserOrderDetails}</p>
                 <p>Best Regards</p>
                 `,
+                attachments: [
+                    {
+                        filename: `${checkFileNamefiles === 'No Image Uploaded' ? 'nofile.jpg'  : checkFileNamefiles  }`,
+                        path: `${checkFileNamefiles === 'No Image Uploaded' ? process.cwd()+"/public/uploads/nofile.jpg"  : process.cwd() + "/public/uploads/"+ checkFileNamefiles}`
+                    },
+                ],
         }
 
         await transporter.sendMail(mailOption)

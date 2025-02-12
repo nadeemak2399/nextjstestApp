@@ -132,7 +132,7 @@ function CustomFormAllPatches({formPageType, formPatchType}) {
                 })
                 .then(response => response.json())
                 .catch(error => console.error(error));
-                filenames = "https://nexuspatches.co.uk/uploads/" + files[0].name;
+                filenames = files[0].name;
 
             }
             checkFileNamefiles = checkFileName === 'No Image Uploaded' ? checkFileName : filenames;
@@ -140,8 +140,12 @@ function CustomFormAllPatches({formPageType, formPatchType}) {
 
             const replacefullName = fullName.replace(/[^a-zA-Z0-9 ]/g,'');
             const replaceuserPhone = userPhone.replace(/[^a-zA-Z0-9 ]/g,'');
-            const replaceuserShipAddress = userShipAddress.replace(/[^a-zA-Z0-9 ]/g,'');
-            const replaceuserOrderDetails = userOrderDetails.replace(/[^a-zA-Z0-9 ]/g,'');
+
+
+            const replaceuserShipAddress = !userShipAddress ? 'Address Empty'  :  userShipAddress.replace(/[^a-zA-Z0-9 ]/g,'');
+            const replaceuserOrderDetails = !userOrderDetails  ? 'Details Empty'  :  userOrderDetails.replace(/[^a-zA-Z0-9 ]/g,'');
+
+
 
             checkPatchQuantity = patchQuantity === 'custom Quantity' ? customPatchQuantity : patchQuantity;
 
@@ -200,7 +204,7 @@ function CustomFormAllPatches({formPageType, formPatchType}) {
   return (
     <>
         <div className='row mt-3 mb-3'>
-            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12">
+            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12  mb-5">
                 <div>
                 <h2>Customize Your Order</h2>
                 <p>Select all the accurate options to customize your patches order.</p>

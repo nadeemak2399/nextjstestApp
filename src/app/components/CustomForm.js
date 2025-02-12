@@ -126,7 +126,7 @@ function CustomForm({formPageType}) {
                 })
                 .then(response => response.json())
                 .catch(error => console.error(error));
-                filenames = "https://nexuspatches.co.uk/uploads/" + files[0].name;
+                filenames = files[0].name;
 
             }
 
@@ -134,8 +134,9 @@ function CustomForm({formPageType}) {
 
             const replacefullName = fullName.replace(/[^a-zA-Z0-9 ]/g,'');
             const replaceuserPhone = userPhone.replace(/[^a-zA-Z0-9 ]/g,'');
-            const replaceuserShipAddress = userShipAddress.replace(/[^a-zA-Z0-9 ]/g,'');
-            const replaceuserOrderDetails = userOrderDetails.replace(/[^a-zA-Z0-9 ]/g,'');
+
+            const replaceuserShipAddress = !userShipAddress ? 'Address Empty'  :  userShipAddress.replace(/[^a-zA-Z0-9 ]/g,'');
+            const replaceuserOrderDetails = !userOrderDetails  ? 'Details Empty'  :  userOrderDetails.replace(/[^a-zA-Z0-9 ]/g,'');
 
             checkPatchQuantity = patchQuantity === 'custom Quantity' ? customPatchQuantity : patchQuantity;
         
@@ -195,7 +196,7 @@ function CustomForm({formPageType}) {
   return (
     <>
         <div className='row mt-3 mb-3'>
-            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12">
+            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12 mb-5">
                 <div>
                 <h2>Customize Your Order</h2>
                 <p>Select all the accurate options to customize your patches order.</p>
@@ -251,55 +252,55 @@ function CustomForm({formPageType}) {
                 <div className='row'>
 
                 
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ25" >
                     <input className="form-check-input" type="radio" checked={patchQuantity === "25 pcs"}  value="25 pcs" name="patchQuantity" onChange={onCustomQuantity} id="patchQ25"/>
                         25 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ50" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ50" value="50 pcs" checked={patchQuantity === "50 pcs"} />
                         50 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ100" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ100" value="100 pcs" checked={patchQuantity === "100 pcs"}  />
                         100 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ200" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ200" value="200 pcs" checked={patchQuantity === "200 pcs"}  />
                         200 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ300" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ300" value="300 pcs" checked={patchQuantity === "300 pcs"} />
                         300 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ500" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ500"  value="500 pcs" checked={patchQuantity === "500 pcs"}/>
                         500 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ1000" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ1000"  value="1000 pcs" checked={patchQuantity === "1000 pcs"}/>
                         1000 Pcs
                     </label>
                 </div>
-                <div className="col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQ2000" >
                     <input className="form-check-input" type="radio" name="patchQuantity" onChange={onCustomQuantity} id="patchQ2000"  value="2000 pcs" checked={patchQuantity === "2000 pcs"}/>
                         2000 Pcs
                     </label>
                 </div>
-                <div className="custom-quantity col-12  col-lg-4 col-md-4  col-sm-4 col-cu-4">
+                <div className="custom-quantity col-lg-4 col-md-4  col-sm-4 col-cu-4">
                     <label className="form-check-label" htmlFor="patchQcustom" >
                     <input className="form-check-input" type="radio" value="custom Quantity" name="patchQuantity" onChange={onCustomQuantity} id="patchQcustom"/>
                         Custom Quantity 
@@ -396,7 +397,6 @@ function CustomForm({formPageType}) {
                 </div>
             </div>
         
-            
             
         { isSubmitting && <div className='container-loadding'><Image width={150} height={50} src="/assets/fade-stagger-circles.svg" alt="Submitting" /></div>  }
         <div className="form-group custom-btn-container">

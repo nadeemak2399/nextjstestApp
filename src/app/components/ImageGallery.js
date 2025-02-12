@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react'
-
 const ImageGallery = ({image1, image2, image3}) => {
 
 
@@ -17,6 +16,7 @@ const ImageGallery = ({image1, image2, image3}) => {
             <img onClick={changeselectedImage} key={0} src={`/assets/${image1}.webp`} alt="custom honey bombs Embroidery patches" />
             <img  onClick={changeselectedImage} key={1} src={`/assets/${image2}.webp`} alt="custom rockford Embroidery patches" />
             <img  onClick={changeselectedImage} key={2} src={`/assets/${image3}.webp`} alt="custom virginia spaceport Embroidery Patches" />
+            
         </div>
     </div>
   )

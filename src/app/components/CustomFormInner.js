@@ -12,17 +12,17 @@ function CustomFormInner({formPageType, formPatchType}) {
       } = useForm()
       
 
-    const [backingType, setBackingType] = useState("");
+    const [backingType, setBackingType] = useState();
     const onOptionChange = e => {
         setBackingType(e.target.value)
       }
 
-    const [choosePatchType, setchoosePatchType] = useState("");
+    const [choosePatchType, setchoosePatchType] = useState();
     const onChangeChoosePatchType = e => {
         setchoosePatchType(e.target.value)
       }
 
-    const [patchQuantity, setpatchQuantity] = useState("");
+    const [patchQuantity, setpatchQuantity] = useState();
     const onCustomQuantity = e => {
         setpatchQuantity(e.target.value)
       }
@@ -93,6 +93,7 @@ function CustomFormInner({formPageType, formPatchType}) {
       let checkFileName;
       let checkFileNamefiles;
       let checkPatchQuantity;
+      let defaultImage;
       const changeFiles = (e) => {
         setFiles(e.target.files);
 
@@ -132,16 +133,25 @@ function CustomFormInner({formPageType, formPatchType}) {
                 })
                 .then(response => response.json())
                 .catch(error => console.error(error));
-                filenames = "https://nexuspatches.co.uk/uploads/" + files[0].name;
+                filenames = files[0].name;
+                console.log("filenames", filenames)
 
             }
             checkFileNamefiles = checkFileName === 'No Image Uploaded' ? checkFileName : filenames;
+
+
+            console.log('defaultImage', defaultImage)
             
 
             const replacefullName = fullName.replace(/[^a-zA-Z0-9 ]/g,'');
             const replaceuserPhone = userPhone.replace(/[^a-zA-Z0-9 ]/g,'');
             const replaceuserShipAddress = userShipAddress.replace(/[^a-zA-Z0-9 ]/g,'');
             const replaceuserOrderDetails = userOrderDetails.replace(/[^a-zA-Z0-9 ]/g,'');
+
+
+            const checkDetails = !replaceuserOrderDetails ? 'Empty Details' : replaceuserOrderDetails;
+            const checkAddress = !replaceuserShipAddress ? 'Address Details' : replaceuserShipAddress;
+
 
             checkPatchQuantity = patchQuantity === 'custom Quantity' ? customPatchQuantity : patchQuantity;
 
@@ -161,8 +171,8 @@ function CustomFormInner({formPageType, formPatchType}) {
                     replacefullName, 
                     userEmail, 
                     replaceuserPhone, 
-                    replaceuserShipAddress, 
-                    replaceuserOrderDetails,
+                    checkAddress, 
+                    checkDetails,
                     checkFileNamefiles,
                     choosePatchType
                 })
@@ -200,7 +210,7 @@ function CustomFormInner({formPageType, formPatchType}) {
   return (
     <>
         <div className='row mt-3 mb-3'>
-            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12">
+            <div className="col-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-cu-12  mb-5">
                 <div>
                 <h2>Customize Your Order</h2>
                 <p>Select all the accurate options to customize your patches order.</p>

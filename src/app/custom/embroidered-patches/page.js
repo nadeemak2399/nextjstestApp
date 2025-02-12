@@ -24,7 +24,7 @@ function Page() {
               Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
             </p>
             <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-cu-12'>
+            <div className='col-6 col-lg-6  mt-3 mb-3 col-12'>
                 <ul className="container-list">
                   <li>Up to 8 thread colors</li>
                   <li>Merrowed edge included</li>
@@ -34,7 +34,7 @@ function Page() {
                   <li>Fast turnaround &amp; delivery</li>
               </ul>
             </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-cu-12 '>
+            <div className='col-6 col-lg-6 mt-3 mb-3 col-12 '>
               <div className='container-small-content'>
                 <h3>Our Order Process</h3>
                 <ol>
