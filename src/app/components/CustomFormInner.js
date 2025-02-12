@@ -132,7 +132,7 @@ function CustomFormInner({formPageType, formPatchType}) {
                 })
                 .then(response => response.json())
                 .catch(error => console.error(error));
-                filenames = "http://localhost:3000/uploads/" + files[0].name;
+                filenames = "https://nexuspatches.co.uk/uploads/" + files[0].name;
 
             }
             checkFileNamefiles = checkFileName === 'No Image Uploaded' ? checkFileName : filenames;
