@@ -1,64 +1,57 @@
-import CustomFormInner from '../components/CustomFormInner';
-import ImageGallery from '@/app/components/ImageGallery';
+import CustomFormInner from "../components/CustomFormInner";
+import ImageGallery from "@/app/components/ImageGallery";
+import ListItemSection from "../components/ListItemSection";
 
 export const metadata = {
-  title: "Custom Police Patches",
-  description: "Police Patches",
-}
+  title: "Custom Police Patches UK – High-Quality & Durable",
+  description:
+    "Get high-quality custom police patches with durable Velcro and iron-on backing! Perfect for uniforms, tactical gear & law enforcement. Fast turnaround & hassle-free orders.",
+};
 
 function Page() {
-
-
   return (
     <>
-    <div className="container ">
+      <div className="container ">
         <div className="row align-items-start  mt-5 mb-5">
           <div className="col-8 col-lg-8 col-sm-12 col-cu-12">
-            <h1 className='pageTitle'>
-            Police Patches
-            </h1>
-              <p>
-              It's hard to beat the traditional good looks of an embroidered patch. The raised polyester thread offers a 3-dimensional sheen and bold appearance. Custom embroidered patches are used in a wide range of applications, from police and fire department uniforms to caps, beanies, jackets and other outerwear. They include a plastic backing for durability and up to 8 thread colors. They can be laser cut or finished with a customary merrowed border. We also offer a Hook & Loop backing option (like Velcro) for military style patches. Iron on patches or peel & stick patches are also available options.
-            </p>
+            <h1 className="pageTitle">Custom Police Patches</h1>
             <p>
-              Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
+              Get custom police patches designed for uniforms, tactical gear,
+              and accessories. Made with high-quality materials and durable
+              Velcro and iron-on backing, our patches offer secure attachment
+              and long-lasting wear.
             </p>
-            <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-cu-12'>
-                <ul className="container-list">
-                  <li>Up to 8 thread colors</li>
-                  <li>Merrowed edge included</li>
-                  <li>Sew-on, iron-on, peel &amp; stick or hook &amp; loop</li>
-                  <li>Free sample photo option</li>
-                  <li>Graphic artwork assistance</li>
-                  <li>Fast turnaround &amp; delivery</li>
-              </ul>
-            </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-cu-12 '>
-              <div className='container-small-content'>
-                <h3>Our Order Process</h3>
-                <ol>
-                  <li>Get your Digital Proof within 1 business day. Approve or reject your proof from your customer account.</li>
-                  <li>If Sample Photo is selected, receive it within 5 business days of approving your digital proof.</li>
-                  <li>After your approvals are complete, view your Ship Date in your customer account.</li>
-                </ol>
-              </div>
-            </div>
+
+            <p>
+              We provide personalised police patches for law enforcement,
+              security teams, and emergency services. With fast turnaround times
+              and efficient ordering, we ensure hassle-free repeat orders.
+              Whether you need a small batch or bulk order, our custom police
+              patches deliver exceptional quality and durability. Order today!{" "}
+            </p>
+            <div className="row mt-3 mb-3">
+              <ListItemSection />
             </div>
           </div>
           <div className="col-4 col-lg-4 col-sm-12 col-cu-12">
-            <div className='sidebar-container'>
-              <ImageGallery image1="hughes-police-patch" image2="pvc-police-patch" image3="winnsbros-police-patch" />
+            <div className="sidebar-container">
+              <ImageGallery
+                image1="hughes-police-patch"
+                image2="pvc-police-patch"
+                image3="winnsbros-police-patch"
+              />
             </div>
           </div>
         </div>
-          <div className="form-container">
-          <CustomFormInner formPageType="Police patches" formPatchType="Police"/>
-          </div>
-         
+        <div className="form-container">
+          <CustomFormInner
+            formPageType="Police patches"
+            formPatchType="Police"
+          />
+        </div>
       </div>
-      </>
-  )
+    </>
+  );
 }
 
-export default Page
+export default Page;

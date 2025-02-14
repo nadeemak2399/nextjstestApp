@@ -24,25 +24,60 @@ const Header = () => {
                
                     <ul className="navbar-nav justify-content-center">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" href="/">Home</Link>
+                            <Link className="nav-link active" aria-current="page" href="/">Custom Patches</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" href="/custom/embroidered-patches">Embroidered Patches</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" href="/custom/pvc-patches">PVC Patches</Link>
+                        
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" href="/">Patches Types</Link>
+                            <ul className="dropdown-menu">
+                                <li><Link className="dropdown-item" href="/custom/embroidered-patches">Embroidered Patches</Link></li>
+                                <li><Link className="dropdown-item" href="/custom/pvc-patches">PVC Patches</Link></li>
+                                <li><Link className="dropdown-item" href="/custom/printed-patches">Printed Patches</Link></li>
+                                <li><Link className="dropdown-item" href="/custom/woven-patches">Woven Patches</Link></li>
+                            </ul>
                         </li>
                         <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Patch Types
-                        </Link>
-                        <ul className="dropdown-menu">
-                            <li><Link className="nav-link" href="/custom/embroidered-patches">Embroidered Patches</Link></li>
-                            <li><Link className="nav-link" href="/custom/printed-patches">Printed Patches</Link></li>
-                            <li><Link className="dropdown-item" href="/custom/woven-patches">Woven Patches</Link></li>
-                            <li><Link className="dropdown-item" href="#">Printed Patches</Link></li>
-                        </ul>
+                            <Link className="nav-link dropdown-toggle" href="/">Patches Styles</Link>
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-police-patches/">Police Patches
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-military-patches/">Military Patches
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-velcro-patches/">Velcro Patches
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-motorcycle-patches/">Motorcycle Patches
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-sports-patches/">Sports Patches
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        className="nav-link" 
+                                        href="/custom-name-patches/">Name Patches
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
+                        
                         <li className="nav-item">
                             <Link className="nav-link" href="/about-us">About</Link>
                         </li>

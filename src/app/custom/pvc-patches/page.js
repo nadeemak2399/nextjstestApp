@@ -1,10 +1,11 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
+import ListItemSection from '@/app/components/ListItemSection';
 
 
 export const metadata = {
   title: "Custom PVC Patches",
-  description: "PVC Patches",
+  description: "Get high-quality custom PVC patches for branding, military, and clothing. Weather-resistant, waterproof & available with Velcro, iron-on, or sew-on backing.",
 }
 
 function Page() {
@@ -18,33 +19,13 @@ function Page() {
             <h1 className='pageTitle'>
             PVC Patches
             </h1>
-              <p>
-              It's hard to beat the traditional good looks of an embroidered patch. The raised polyester thread offers a 3-dimensional sheen and bold appearance. Custom embroidered patches are used in a wide range of applications, from police and fire department uniforms to caps, beanies, jackets and other outerwear. They include a plastic backing for durability and up to 8 thread colors. They can be laser cut or finished with a customary merrowed border. We also offer a Hook & Loop backing option (like Velcro) for military style patches. Iron on patches or peel & stick patches are also available options.
-            </p>
-            <p>
-              Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
-            </p>
+            <p>Looking for high-quality PVC patches that stand the test of time? Our custom PVC patches are designed for branding and promotion, military and forces, and clothing and accessories. These weather-resistant and waterproof patches maintain their shape and colour in any condition.</p>
+
+              <p>Our PVC patches for jackets, hats, and bags offer a unique design that ensures your logo or artwork stands out. We use sculpted texture 3D look to give depth and precision to every detail. Whether you need PVC patches with Velcro, iron-on, or sew-on backing, we provide multiple options to fit your needs.</p>
+
+              <p>No need to search for PVC patches near me we deliver fast shipping in UK with low minimum order required. Our custom artwork for free service means you can send your ideas, and we’ll bring them to life at no extra cost. With fully personalised designs, you get the freedom to create exactly what you envision. Order now and enjoy affordable prices, premium quality, and quick delivery!</p>
             <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-cu-12'>
-                <ul className="container-list">
-                  <li>Up to 8 thread colors</li>
-                  <li>Merrowed edge included</li>
-                  <li>Sew-on, iron-on, peel &amp; stick or hook &amp; loop</li>
-                  <li>Free sample photo option</li>
-                  <li>Graphic artwork assistance</li>
-                  <li>Fast turnaround &amp; delivery</li>
-              </ul>
-            </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-cu-12 '>
-              <div className='container-small-content'>
-                <h3>Our Order Process</h3>
-                <ol>
-                  <li>Get your Digital Proof within 1 business day. Approve or reject your proof from your customer account.</li>
-                  <li>If Sample Photo is selected, receive it within 5 business days of approving your digital proof.</li>
-                  <li>After your approvals are complete, view your Ship Date in your customer account.</li>
-                </ol>
-              </div>
-            </div>
+            <ListItemSection/>
             </div>
           </div>
           <div className="col-4 col-lg-4 col-sm-12 col-cu-12">

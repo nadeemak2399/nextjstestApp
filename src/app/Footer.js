@@ -14,12 +14,7 @@ function Footer() {
                 <Image width={250} height={70} src="/assets/logobw.png" alt="Logo Footer" />
               </div>
               <p>
-                Iron-on patch backing allows you to permanently attach an
-                embroidered patch to your goods with a home iron. Each
-                application only takes around 30 seconds! For heat press set to
-                375 F or for home iron set to medium cotton setting, no steam.
-                Press firmly for 20 seconds, then place on a flat surface and
-                let cool completely.
+              Your Trusted Custom Patch Supplier in the UK. We specialise in embroidered, woven, PVC, and printed patches with multiple backing options. Enjoy fast delivery, superior quality, and unbeatable prices on all custom patches.
               </p>
             </div>
 
@@ -59,16 +54,6 @@ function Footer() {
                 <li className="nav-item ">
                   <Link href="/order-now" className="nav-link ">
                     Free Quote
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
-                    Blog
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link href="/faq" className="nav-link ">
-                    FAQs
                   </Link>
                 </li>
                 <li className="nav-item ">

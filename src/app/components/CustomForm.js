@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { useForm } from "react-hook-form"
+import { redirect } from 'next/navigation';
 
 function CustomForm({formPageType}) {
 
@@ -166,7 +167,8 @@ function CustomForm({formPageType}) {
 
 
 
-            
+            redirect('/thank-you');
+
         }
       };
 
@@ -314,21 +316,21 @@ function CustomForm({formPageType}) {
             
         <div className='container-backing-type'>
             <span className='steps-heading'> Step 4: Backing Options</span>
-                <div className="input-container col-xs-6 col-md-4 ">
+                <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6 ">
                     <input onChange={onOptionChange} value="Iron-on-Backing" className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Iron-on-Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/iron-on-backing.webp" alt="Iron On Backing" />
                         <label className="form-check-label" htmlFor="ironOnBacking">Iron On Backing</label>
                     </div>
                 </div>
-                <div className="input-container col-xs-6 col-md-4">
+                <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
                     <input onChange={onOptionChange} value="Sew On Backing" className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Sew On Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/No-backing.webp" alt="Sew On Backing" />
                         <label className="form-check-label" htmlFor="SewOnBacking">Sew On Backing</label>
                     </div>
                 </div>
-                <div className="input-container col-xs-6 col-md-4">
+                <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
                     <input onChange={onOptionChange} value="Velcro Hook n Loop"  className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Velcro Hook n Loop"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/hook-and-loop.webp" alt="Velcro Hook & Loop" />
@@ -336,7 +338,7 @@ function CustomForm({formPageType}) {
                         </label>
                     </div>
                 </div>
-                <div className="input-container col-xs-6 col-md-4">
+                <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
                     <input onChange={onOptionChange} value="Velcro Hook Backing"  className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Velcro Hook Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/hook-backing.webp" alt="Velcro Hook Backing" />
@@ -344,7 +346,7 @@ function CustomForm({formPageType}) {
                         </label>
                     </div>
                 </div>
-                <div className="input-container col-xs-6 col-md-4">
+                <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
                     <input onChange={onOptionChange} value="Velcro Loop Backing" className="form-check-input" type="radio" name="backingType" id={backingType}  checked={backingType === "Velcro Loop Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/loop-backing.webp" alt="Velcro Loop Backing" />
@@ -359,14 +361,14 @@ function CustomForm({formPageType}) {
             <div className='container-shipping-details'>
             <span className='steps-heading'> Step 5: Shipping Details</span>
                 <div className='row mt-3 mb-3'>
-                    <div className='col-6'>
+                    <div className='col-6 col-lg-6 col-sm-6 col-12'>
                         <div className="form-group">
                             <label htmlFor="quoteFullName">Full Name</label>
                             <input {...register("quoteFullName", { required: true, pattern: /([A-Za-z])\w+/g  })} type="text" name='quoteFullName' className="form-control" id="quoteFullName" aria-describedby="emailHelp" placeholder="Enter email" value={fullName} onChange={changetFullName} />
                             {errors.quoteFullName && <span className='handleerror'>Special CHars Not Allowed</span>}
                         </div>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-6 col-lg-6 col-sm-6 col-12'>
                         <div className="form-group">
                             <label htmlFor="quoteEmail">Email address</label>
                             <input {...register("quoteEmail", { required: true })} type="email" name='quoteEmail' className="form-control" id="quoteEmail" aria-describedby="emailHelp" placeholder="Enter email" value={userEmail} onChange={changeUserEmail} />
@@ -375,14 +377,14 @@ function CustomForm({formPageType}) {
                     </div>
                 </div>
                 <div className='row mt-3 mb-3'>
-                    <div className='col-6'>
+                    <div className='col-6 col-lg-6 col-sm-6 col-12'>
                         <div className="form-group">
                             <label  htmlFor="quotePhoneNumber">Phone Number</label>
                             <input {...register("quotePhoneNumber", { required: true })} type="text" name='quotePhoneNumber' className="form-control" id="quotePhoneNumber" placeholder="Enter Phone Number" value={userPhone} onChange={changeUserPhone} />
                             {errors.quotePhoneNumber && <span className='handleerror'>This field is required</span>}
                         </div>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-6 col-lg-6 col-sm-6 col-12'>
                         <div className="form-group">
                             <label htmlFor="quoteShipAddress">Shipping Address</label>
                             <input type="text" name='quoteShipAddress' className="form-control" id="quoteShipAddress" placeholder="Enter Shipping Address" value={userShipAddress} onChange={changeShipAddress} />
@@ -398,7 +400,8 @@ function CustomForm({formPageType}) {
             </div>
         
             
-        { isSubmitting && <div className='container-loadding'><Image width={150} height={50} src="/assets/fade-stagger-circles.svg" alt="Submitting" /></div>  }
+        { isSubmitting && <div className='container-loadding'><Image width={150} height={50} src="/assets/fade-stagger-circles.svg" alt="Submitting" /></div>   } 
+        
         <div className="form-group custom-btn-container">
             <input disabled={isSubmitting} className="btn btn-primary form-control patches-btn" type="submit" onClick={sendMail}  value="Place Order"/>
         </div>

@@ -3,7 +3,6 @@ const nodemailer = require('nodemailer');
 
 
 
-
 export async function POST(request) {
 
     
@@ -47,7 +46,8 @@ export async function POST(request) {
                     },
                 ],
         }
-        await transporter.sendMail(mailOption)
+        await transporter.sendMail(mailOption);
+        
 
         return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
     } catch (error) {

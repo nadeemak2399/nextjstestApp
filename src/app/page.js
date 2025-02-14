@@ -1,24 +1,20 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from 'next/link'
-import Head from 'next/head';
-
 
 export default function Home() {
 
 
   return (
     <>
-    <Head>
-      <title>Custom Embroidered Patches</title>
-    </Head>
       <div className='main-hero-banner'>
             <div className="hero-banner-bg-img">
             <div className="mask hero-mask" >
                 <div className="hero-mask-content d-flex">
                 <div className="hero-mask-content-inner">
-                    <h1 className="mb-3">CUSTOM PATCHES</h1>
-                    <p>Our military patches are of the highest quality and you are guaranteed to be 100% satisfied.</p>
+                    <h1 className="mb-3">Custom Patches UK</h1>
+                    <p>
+                    UK’s Leading Custom Patch Manufacturer. We specialise in high-quality embroidered, woven, PVC, and printed patches for every industry. Enjoy fast turnaround, precision craftsmanship, and free UK delivery on all custom patches.
+                    </p>
                     <Link className="btn-herobanner" href="/order-now" role="button">Order Now</Link>
                 </div>
                 </div>
@@ -72,10 +68,10 @@ export default function Home() {
                             <div className="patch-item-content">
                                 <h3>Embroidered Patches</h3>
                                 <div className="patch-item-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                    100 Patches from <span>$1.80/patch</span>
                                 </div>
                                 <div className="patch-item-order">
-                                    <Link className="nav-link" href="custom/embroidered-patches">Order Now</Link>
+                                    <Link className="nav-link" href="/custom/embroidered-patches">Order Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -88,10 +84,10 @@ export default function Home() {
                             <div className="patch-item-content">
                                 <h3>PVC Patches</h3>
                                 <div className="patch-item-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                    100 Patches from <span>$1.70/patch</span>
                                 </div>
                                 <div className="patch-item-order">
-                                <Link className="nav-link" href="custom/pvc-patches">Order Now</Link>
+                                <Link className="nav-link" href="/custom/pvc-patches">Order Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -107,10 +103,10 @@ export default function Home() {
                             <div className="patch-item-content">
                                 <h3>Woven Patches</h3>
                                 <div className="patch-item-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                    100 Patches from <span>$1.60/patch</span>
                                 </div>
                                 <div className="patch-item-order">
-                                <Link className="nav-link" href="custom/woven-patches">Order Now</Link>
+                                <Link className="nav-link" href="/custom/woven-patches">Order Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -123,10 +119,10 @@ export default function Home() {
                             <div className="patch-item-content">
                                 <h3>Printed Patches</h3>
                                 <div className="patch-item-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                    100 Patches from <span>$1.50/patch</span>
                                 </div>
                                 <div className="patch-item-order">
-                                <Link className="nav-link" href="custom/printed-patches">Order Now</Link>
+                                <Link className="nav-link" href="/custom/printed-patches">Order Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -139,19 +135,17 @@ export default function Home() {
         </div>
         <div className="patch-content-section">
             <div className="container">
-                <h2 className='section-head-design'>Custom Patches in UK for Every Industry </h2>
+                <h2 className='section-head-design'>UK's Best Custom Patch Maker </h2>
                 <div className="row">
                     <div className="col-8 col-lg-8 col-md-8 col-sm-12 col-12">
-                        <h3>London’s Best Patches Design Company Weaving Each Patch with Years of Experience</h3>
-                        <p>
-                            Custom embroidered patches are the go-to option for every existing industry, including the military, motorcycle clubs, organizations, anniversaries and other occasions. Bespoke Patches UK is a one-stop kind of clothing patch making company that offers best quality embroidery patches for clothing, backed with your desired type of backing, with free artwork and unlimited cycles of design edits.
-                        </p>
-                        <p>
-                            Expert patch creators here can turn any design into thread artwork. All you have to do is, follow a few steps, and we’d deliver your personalised patches to your doorstep in no time! Being a part of this market for 10+ years, we have mastered the art of needle and thread. Here at our custom-made badge making company, each fabric badge is stitched with experience, and perfection.
-                        </p>
-                        <p>
-                        Whether you need to personalise your outfit, wish to raise brand awareness, or want to bring old apparel to life, our customised embroidered patches can be your rescue. With a wide range of backing options available, you do not have to limit your imagination! Be it heat-and-seal, Velcro, sew-on, clutch pin, magnetic, or anything else – it’s all available at Bespoke Patches UK.
-                        </p>
+                        <h3>Custom Patches in UK for Every Industry</h3>
+                        <p>Welcome to NexusPatches.Co.uk, UK’s best custom patch maker, offering top-quality custom patches UK for businesses, organisations, and events. Whether you need Velcro hook & loop or iron-on patches, sew-on patches, or plastic backing patches, we provide them all with precision and durability.</p>
+
+                        <p>Our expert team offers a free design service, ensuring ordering custom patches is completely stress-free. We handle everything from enquiry to delivery, creating bespoke custom patches tailored to your needs. Enjoy free artwork, free shipping, and no minimum order – benefits other UK patch makers can’t match!</p>
+
+                        <p>Our custom patch designers craft unique, high-quality patches for any industry. Whether you require embroidered, PVC, or woven patches, we guarantee top-quality patches at competitive prices.</p>
+
+                        <p>Let us handle everything, making bespoke patches for businesses, organisations, and events. Order your custom patches in the UK instantly and bring your vision to life today!</p>
                     </div>
                     <div className="col-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div className="image-container-home">
@@ -167,17 +161,17 @@ export default function Home() {
                 <div className="row">
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-woven-labels/"><Image width={150} height={50} src="/assets/FullEmbroideredPrintedmob.png" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-woven-labels/"><Image width={150} height={50} src="/assets/FullEmbroideredPrintedmob.png" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-woven-labels/"><h3>Woven Labels</h3></Link>
+                                <Link href="/custom-woven-labels/"><h3>Woven Labels</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.20/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-woven-labels/">Order Now</Link>
+                                    <Link href="/custom-woven-labels/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -185,17 +179,17 @@ export default function Home() {
                     </div>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-police-patches/"><Image width={150} height={50} src="/assets/custom-police-patch.webp" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-police-patches/"><Image width={150} height={50} src="/assets/custom-police-patch.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-police-patches/"><h3>Police Patches</h3></Link>
+                                <Link href="/custom-police-patches/"><h3>Police Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.90/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-police-patches/">Order Now</Link>
+                                    <Link href="/custom-police-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -203,17 +197,17 @@ export default function Home() {
                     </div>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-military-patches/"><Image width={150} height={50} src="/assets/Military-Patches.webp" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-military-patches/"><Image width={150} height={50} src="/assets/Military-Patches.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-military-patches/"><h3>Military Patches</h3></Link>
+                                <Link href="/custom-military-patches/"><h3>Military Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.75/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-military-patches/">Order Now</Link>
+                                    <Link href="/custom-military-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -221,17 +215,17 @@ export default function Home() {
                     </div>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-velcro-patches/"><Image width={150} height={50} src="/assets/velcro-patch.webp" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-velcro-patches/"><Image width={150} height={50} src="/assets/velcro-patch.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-velcro-patches/"><h3>Velcro Patches</h3></Link>
+                                <Link href="/custom-velcro-patches/"><h3>Velcro Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.80/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-velcro-patches/">Order Now</Link>
+                                    <Link href="/custom-velcro-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -241,17 +235,17 @@ export default function Home() {
                     <div className='row'>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-motorcycle-patches/"><Image width={150} height={50} src="/assets/FullEmbroideredPrintedmob.png" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-motorcycle-patches/"><Image width={150} height={50} src="/assets/Custom-Motorcycle-Patches.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-motorcycle-patches/"><h3>Motorcycle Patches</h3></Link>
+                                <Link href="/custom-motorcycle-patches/"><h3>Motorcycle Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.70/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-motorcycle-patches/">Order Now</Link>
+                                    <Link href="/custom-motorcycle-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -259,17 +253,17 @@ export default function Home() {
                     </div>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-sports-patches/"><Image width={150} height={50} src="/assets/sports-patch.webp" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-sports-patches/"><Image width={150} height={50} src="/assets/sports-patch.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-sports-patches/"><h3>Sports Patches</h3></Link>
+                                <Link href="/custom-sports-patches/"><h3>Sports Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                100 Patches from <span>$1.60/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-sports-patches/">Order Now</Link>
+                                    <Link href="/custom-sports-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -277,35 +271,17 @@ export default function Home() {
                     </div>
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-name-patches/"><Image width={150} height={50} src="/assets/name-patch.webp" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-name-patches/"><Image width={150} height={50} src="/assets/name-patch.webp" alt="testlogo" /></Link></div>
                             <div className="patch-type-content">
-                                <Link href="custom-name-patches/"><h3>Name Patches</h3></Link>
+                                <Link href="/custom-name-patches/"><h3>Name Patches</h3></Link>
                                 <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
+                                    100 Patches from <span>$1.40/patch</span>
                                 </div>
                                 <div className='patch-type-intro'>
                                     Distinctive with a recognizable style.
                                 </div>
                                 <div className="patch-type-order">
-                                    <Link href="custom-name-patches/">Order Now</Link>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="custom-jacket-patches/"><Image width={150} height={50} src="/assets/jacket-patch.webp" alt="testlogo" /></Link></div>
-                            <div className="patch-type-content">
-                                <Link href="custom-jacket-patches/"><h3>Jacket Patches</h3></Link>
-                                <div className="patch-type-price">
-                                    As low as : <span>$0.14 ea.</span>
-                                </div>
-                                <div className='patch-type-intro'>
-                                    Distinctive with a recognizable style.
-                                </div>
-                                <div className="patch-type-order">
-                                    <Link href="custom-jacket-patches/">Order Now</Link>
+                                    <Link href="/custom-name-patches/">Order Now</Link>
                                     
                                 </div>
                             </div>
@@ -322,8 +298,10 @@ export default function Home() {
                 <div className="hero-mask-content d-flex">
                 <div className="hero-mask-content-inner">
                     <h1 className="mb-3">CUSTOM PATCHES</h1>
-                    <p>Our military patches are of the highest quality and you are guaranteed to be 100% satisfied.</p>
-                    <Link className="btn-herobanner" href="#!" role="button">Call to action</Link>
+                    <p>
+                    At Nexus Patches, we provide top-quality custom patches with a low minimum order requirement, making them accessible to everyone. Our patches come in any size, shape, or colour, with up to 8 thread colours for intricate embroidery. Choose from iron-on, sew-on, Velcro hook & loop, or peel & stick backings for easy application. We offer free design artwork and unlimited edits to ensure perfection. With a fast turnaround time and free delivery within 10-12 business days, you receive your patches promptly. Plus, enjoy big discounts on bulk orders. Order today for premium patches at unbeatable prices!
+                    </p>
+                    <Link className="btn-herobanner" href="/order-now" role="button">Order Now</Link>
                 </div>
                 </div>
             </div>
@@ -336,15 +314,13 @@ export default function Home() {
                     <div className="col-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div className="why-container-inner">
                             <div className="why-inner-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" className="bi bi-cake2" viewBox="0 0 16 16">
-  <path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426"/>
-</svg>
+                            <Image width={150} height={150} src="/assets/Quote-Artwork.webp" alt="Quote & Artwork" />
                             </div>
                             <div className="why-container-content">
-                                <h3>Attentive Service</h3>
+                                <h3>Quote & Artwork</h3>
                                 <div className="why-container-desc">
                                     <p>
-                                        We have 24-hour professional customer service, if you have any questions can feel free to contact us.
+                                    Submit a quote with your design, and our sales team will contact you. Receive your digital proof within 1 business day for approval.
                                     </p>
                                 </div>
                             </div>
@@ -353,15 +329,13 @@ export default function Home() {
                     <div className="col-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div className="why-container-inner">
                             <div className="why-inner-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" className="bi bi-cake2" viewBox="0 0 16 16">
-  <path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426"/>
-</svg>
+                            <Image width={150} height={150} src="/assets/Approval-Payment.webp" alt="Approval & Payment" />
                             </div>
                             <div className="why-container-content">
-                                <h3>Quality Assurance</h3>
+                                <h3>Approval & Payment</h3>
                                 <div className="why-container-desc">
                                     <p>
-                                        Patches Co. provides you with the best and most comprehensive after-sales service.
+                                    Once you approve your digital proof, your order moves into production after payment confirmation.
                                     </p>
                                 </div>
                             </div>
@@ -370,15 +344,13 @@ export default function Home() {
                     <div className="col-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div className="why-container-inner">
                             <div className="why-inner-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" className="bi bi-cake2" viewBox="0 0 16 16">
-  <path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426"/>
-</svg>
+                            <Image width={150} height={150} src="/assets/Production-Delivery.webp" alt="Production & Delivery" />
                             </div>
                             <div className="why-container-content">
-                                <h3>Free Design</h3>
+                                <h3>Production & Delivery</h3>
                                 <div className="why-container-desc">
                                     <p>
-                                        You give us your idea or design, and we have a professional team to design and modify it for you for free.
+                                    Your patches will be crafted and delivered within 10 to 12 business days, ensuring a fast approval process and free shipping for a hassle-free experience!
                                     </p>
                                 </div>
                             </div>
@@ -396,36 +368,60 @@ export default function Home() {
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingOne">
                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneFirstCol" aria-expanded="true" aria-controls="collapseOneFirstCol">
-                            <span>Q: </span> Can I design my own custom patches?
+                            <span>Q: </span> Can I customise the size, shape, and colours of my patch?
                             </button>
                             </h3>
                             <div id="collapseOneFirstCol" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFirstCol">
                             <div className="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Yes! We create fully customised patches in any size, shape, or colour, with up to 8 thread colours for embroidery.
                             </div>
                             </div>
                         </div>
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFirstCol" aria-expanded="false" aria-controls="collapseTwoFirstCol">
-                            <span>Q: </span> Are there different backing options are available at Patches Co. ?
+                            <span>Q: </span> Do you offer free design services and edits?
                             </button>
                             </h3>
                             <div id="collapseTwoFirstCol" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFirstCol">
                             <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Yes, we provide free design artwork and unlimited edits, ensuring your patch looks exactly how you want it before production begins.
                             </div>
                             </div>
                         </div>
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeFirstCol" aria-expanded="false" aria-controls="collapseThreeFirstCol">
-                            <span>Q:</span> Is shipping free?
+                            <span>Q:</span> Are your patches suitable for outdoor use and washing?
                             </button>
                             </h3>
                             <div id="collapseThreeFirstCol" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFirstCol">
                             <div className="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Absolutely! Our patches are made from high-quality materials, ensuring they are durable, fade-resistant, and washable.
+                            </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h3 className="accordion-header" id="headingThree">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourFirstCol" aria-expanded="false" aria-controls="collapsefourFirstCol">
+                            <span>Q:</span> How can I place an order and make a payment?
+                            </button>
+                            </h3>
+                            <div id="collapsefourFirstCol" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFirstCol">
+                            <div className="accordion-body">
+                            First, submit your order on our website. Our sales team will contact you to finalise the details. Once everything is confirmed, we will send you a Stripe invoice, which you can pay using a credit or debit card. After payment is received, your order will proceed to production.
+                            </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h3 className="accordion-header" id="headingThree">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefiveFirstCol" aria-expanded="false" aria-controls="collapsefiveFirstCol">
+                            <span>Q:</span> Do you provide bulk order discounts?
+                            </button>
+                            </h3>
+                            <div id="collapsefiveFirstCol" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFirstCol">
+                            <div className="accordion-body">
+                            Yes, we offer big discounts on large orders, making bulk purchases more cost-effective for businesses, clubs, and organisations.
                             </div>
                             </div>
                         </div>
@@ -436,36 +432,48 @@ export default function Home() {
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingOne">
                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSecondCol" aria-expanded="true" aria-controls="collapseOneSecondCol">
-                            <span>Q: </span> Can I design my own custom patches?
+                            <span>Q: </span> What types of custom patches do you offer?
                             </button>
                             </h3>
                             <div id="collapseOneSecondCol" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSecondCol">
                             <div className="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    We provide embroidered, woven, PVC, leather, chenille, and printed patches.
                             </div>
                             </div>
                         </div>
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSecondCol" aria-expanded="false" aria-controls="collapseTwoSecondCol">
-                            <span>Q: </span> Are there different backing options are available at Patches Co. ?
+                            <span>Q: </span> What is the minimum order quantity for custom patches?
                             </button>
                             </h3>
                             <div id="collapseTwoSecondCol" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSecondCol">
                             <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            We have a low minimum order requirement, making it easy for individuals and businesses to order, whether you need one patch or a bulk quantity.
                             </div>
                             </div>
                         </div>
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSecondCol" aria-expanded="false" aria-controls="collapseThreeSecondCol">
-                            <span>Q:</span> Is shipping free?
+                            <span>Q:</span> How long does it take to receive my order?
                             </button>
                             </h3>
                             <div id="collapseThreeSecondCol" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSecondCol">
                             <div className="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Our standard turnaround time is 10-12 business days, including free delivery. Urgent orders may be accommodated upon request.
+                            </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item">
+                            <h3 className="accordion-header" id="headingThree">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourSecondCol" aria-expanded="false" aria-controls="collapsefourSecondCol">
+                            <span>Q:</span> What backing options are available for patches?
+                            </button>
+                            </h3>
+                            <div id="collapsefourSecondCol" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSecondCol">
+                            <div className="accordion-body">
+                            We offer iron-on, sew-on, Velcro hook & loop, plastic, and peel & stick backings, allowing you to choose the best option for your application.
                             </div>
                             </div>
                         </div>

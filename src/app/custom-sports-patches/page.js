@@ -1,5 +1,6 @@
 import CustomFormInner from '../components/CustomFormInner';
 import ImageGallery from '@/app/components/ImageGallery';
+import ListItemSection from '../components/ListItemSection';
 
 export const metadata = {
   title: "Custom Sports Patches",
@@ -24,26 +25,7 @@ function Page() {
               Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
             </p>
             <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-cu-12'>
-                <ul className="container-list">
-                  <li>Up to 8 thread colors</li>
-                  <li>Merrowed edge included</li>
-                  <li>Sew-on, iron-on, peel &amp; stick or hook &amp; loop</li>
-                  <li>Free sample photo option</li>
-                  <li>Graphic artwork assistance</li>
-                  <li>Fast turnaround &amp; delivery</li>
-              </ul>
-            </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-cu-12 '>
-              <div className='container-small-content'>
-                <h3>Our Order Process</h3>
-                <ol>
-                  <li>Get your Digital Proof within 1 business day. Approve or reject your proof from your customer account.</li>
-                  <li>If Sample Photo is selected, receive it within 5 business days of approving your digital proof.</li>
-                  <li>After your approvals are complete, view your Ship Date in your customer account.</li>
-                </ol>
-              </div>
-            </div>
+            <ListItemSection />
             </div>
           </div>
           <div className="col-4 col-lg-4 col-sm-12 col-cu-12">

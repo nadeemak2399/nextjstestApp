@@ -1,9 +1,10 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
+import ListItemSection from '@/app/components/ListItemSection';
 
 export const metadata = {
   title: "Custom Embroidered Patches",
-  description: "Embroidered Patches",
+  description: "Design custom embroidered patches with the UK's top patch maker. Choose from iron-on, sew-on, and hook & loop backing options, with free shipping and low minimum orders.",
 }
 
 function Page() {
@@ -17,33 +18,17 @@ function Page() {
             <h1 className='pageTitle'>
               Embroidered Patches
             </h1>
-              <p>
-              It's hard to beat the traditional good looks of an embroidered patch. The raised polyester thread offers a 3-dimensional sheen and bold appearance. Custom embroidered patches are used in a wide range of applications, from police and fire department uniforms to caps, beanies, jackets and other outerwear. They include a plastic backing for durability and up to 8 thread colors. They can be laser cut or finished with a customary merrowed border. We also offer a Hook & Loop backing option (like Velcro) for military style patches. Iron on patches or peel & stick patches are also available options.
-            </p>
-            <p>
-              Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
-            </p>
+              <p>Looking for embroidered patches in the UK? At Nexus Patches, we specialise in creating custom embroidered patches tailored to your needs. Whether you need patches in bulk online, individual designs for jackets, caps or hats, or uniforms, or custom patches for clothing backed with premium materials, we’ve got you covered.</p>
+
+              <p>Our expert patch creators use high-quality fabric badges and a high stitch count to craft embroidered badge making solutions that stand out. You can design your patches in any shape, size, or colour, and we’ll ensure the backed with your desired type of finishing. Choose from options like laser cut or finished with a classic merrowed border, or go for heat-and-seal, hook & loop backing option, iron-on patches, Velcro patches, or sew-on patches for ease of application and long-lasting durability.</p>
+
+              <p>We make ordering custom embroidered badges UK simple and stress-free. Just upload your design, and our team will provide a digital proof within 1 business day. Need changes? No problem! Our approval process fast ensures you get exactly what you need. With low minimum fuss, you can order as many or as few patches as you want. Plus, enjoy free shipping free artwork and low minimum service, making us the go-to patch making company in the UK.</p>
+
+              <p>Our embroidered patches are used in various industries, from businesses and organisations to military patches and biker patches. Whether you need woven patches, back patches, or unique pvc patches, we deliver customisation with excellence and precision.</p>
+
+              <p>Request a free quote today and discover why we’re one of the UK’s best patches design companies. With our commitment to delivering durable patches, superior quality, and fast turnaround, Nexus Patches is your trusted partner for all things embroidery.</p>
             <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-12'>
-                <ul className="container-list">
-                  <li>Up to 8 thread colors</li>
-                  <li>Merrowed edge included</li>
-                  <li>Sew-on, iron-on, peel &amp; stick or hook &amp; loop</li>
-                  <li>Free sample photo option</li>
-                  <li>Graphic artwork assistance</li>
-                  <li>Fast turnaround &amp; delivery</li>
-              </ul>
-            </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-12 '>
-              <div className='container-small-content'>
-                <h3>Our Order Process</h3>
-                <ol>
-                  <li>Get your Digital Proof within 1 business day. Approve or reject your proof from your customer account.</li>
-                  <li>If Sample Photo is selected, receive it within 5 business days of approving your digital proof.</li>
-                  <li>After your approvals are complete, view your Ship Date in your customer account.</li>
-                </ol>
-              </div>
-            </div>
+              <ListItemSection/>
             </div>
           </div>
           <div className="col-4 col-lg-4 col-sm-12 col-cu-12">

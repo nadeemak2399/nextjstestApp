@@ -39,7 +39,11 @@ a {
     color-scheme: dark;
   }
 }
-
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 19px;
+}
 
 
 
@@ -280,12 +284,12 @@ ul.container-list li.container-list-item {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-.navbar-nav li {
+.navbar-nav > li {
   padding: 0 15px;
   font-weight: 500;
   color: #000000;
 }
-.navbar-nav li:hover a{
+.navbar-nav > li:hover a{
   color: #007c6b;
 }
 .dropdown .dropdown-menu {
@@ -296,6 +300,7 @@ ul.container-list li.container-list-item {
 .dropdown .dropdown-menu li a {
   line-height: 30px;
   padding: 5px 10px;
+  font-weight: 500 !important;
 }
 .dropdown .dropdown-menu li:hover{
   background-color: #007c6b;
@@ -333,6 +338,7 @@ ul.container-list li.container-list-item {
   padding: 9px 0px;
   font-size: 15px;
   font-weight: 600;
+  background-color: #007c6b;
 }
 .custom-btn-container input:hover {
   background: white;
@@ -391,13 +397,14 @@ ul.container-list li.container-list-item {
   margin-top: 50px;
 }
 .hero-banner-bg-img {
-  background-image: url("/assets/emb.webp");
+  background-image: url("/assets/patches-banner.webp");
   height: 500px;
   background-position: center;
   background-size: cover;
 }
 .hero-mask-content p {
   color: #ffffff;
+  width: 50%;
 }
 .hero-mask{
   background-color: rgba(0, 0, 0, 0.6);
@@ -580,7 +587,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,126,110,1);
   color: #ffffff;
 }
 .hero-banner-bg-img.custom-banner {
-  background-image: url("/assets/printing-patch-get-today.jpg");
+  background-image: url("/assets/custom-patches-banner.webp");
   height: 500px;
   background-position: center;
   background-size: cover;
@@ -615,6 +622,7 @@ ul.container-list li {
   border: 2px solid #007e6e;
   border-radius: 5px;
   position: relative;
+  padding-bottom: 5px;
 }
 .container-small-content h3 {
   margin-top: 0;
@@ -633,8 +641,12 @@ ul.container-list li {
 }
 .container-small-content li {
   font-size: 1.15rem;
-  line-height: 30px;
-  margin-bottom: 16px;
+  line-height: 25px;
+  margin-bottom: 13px;
+}
+.container-small-content li span {
+  font-weight: 500;
+  color: #007c6b;
 }
 .accordion-item {
   margin-bottom: 20px;
@@ -728,6 +740,7 @@ ul.container-list li {
   border: 1px solid #00807140;
   transition: all .3s;
   cursor: pointer;
+  height: 300px;
   box-shadow:rgb(0 128 113 / 13%) 0px 0px 6px 1px;
 }
 .why-container-inner:hover {
@@ -757,8 +770,16 @@ ul.container-list li {
   padding-bottom: 20px;
   color: #007e6e;
 }
-
-
+.section-thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-thankyou-inner {
+  margin: 40px 0;
+  text-align: center;
+  padding: 30px;
+}
 
 
 
@@ -809,6 +830,10 @@ ul.container-list li {
 
 }
 @media (max-width: 990px){
+  .hero-mask-content p {
+    color: #fff;
+    width: 100%;
+}
   .patch-item {
     display: block;
     position: relative;
@@ -899,7 +924,16 @@ ul.container-list li {
 .patch-content-section h3 {
   font-size: 20px;
 }
+.row.align-items-start.mt-5.mb-5 {
+  flex-direction: column-reverse;
+}
 
+.image-container {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 }
 
 
@@ -948,21 +982,43 @@ a.btn-herobanner {
   font-size: 25px;
   margin-bottom: 20px;
 }
-
-
+.hero-banner-bg-img.custom-banner {
+  height: 280px;
+}
+p {
+  font-size: 15px;
+}
+ul.container-list li {
+  line-height: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.container-small-content li {
+  font-size: 1rem;
+}
+.image-container {
+  text-align: center;
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 }
 
 @media (max-width: 580px){
+  .patch-type-order a {
+    padding: 5px 15px;
+    font-size: 12px;
+}
   .thumbnail-image-container img {
-    width: 100px;
+    width: 90px;
 }
   .col-cu-12{
     flex: 0 0 auto !important;
     width: 100% !important;
   }
   .patch-type-container .col-6{
-    padding: 0 5px;
+    padding: 0 10px;
   }
   .patch-item-img {
     width: 150px;

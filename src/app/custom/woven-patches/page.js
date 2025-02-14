@@ -1,9 +1,10 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
+import ListItemSection from '@/app/components/ListItemSection';
 
 export const metadata = {
-  title: "Custom Woven Patches",
-  description: "Woven Patches",
+  title: "Custom Woven Patches UK - Nexus Patches",
+  description: "Order custom woven patches with intricate details and a smooth texture. Ideal for logos, uniforms, and branding.",
 }
 
 function Page() {
@@ -15,35 +16,15 @@ function Page() {
         <div className="row align-items-start  mt-5 mb-5">
           <div className="col-8 col-lg-8 col-sm-12 col-cu-12">
             <h1 className='pageTitle'>
-              Embroidered Patches
+            Custom Woven Patches
             </h1>
-              <p>
-              It's hard to beat the traditional good looks of an embroidered patch. The raised polyester thread offers a 3-dimensional sheen and bold appearance. Custom embroidered patches are used in a wide range of applications, from police and fire department uniforms to caps, beanies, jackets and other outerwear. They include a plastic backing for durability and up to 8 thread colors. They can be laser cut or finished with a customary merrowed border. We also offer a Hook & Loop backing option (like Velcro) for military style patches. Iron on patches or peel & stick patches are also available options.
-            </p>
-            <p>
-              Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
-            </p>
+            <p>Woven patches are the perfect solution for designs requiring intricate details, fine lettering, and a smooth, professional finish. Using ultra-thin threads, these patches achieve superior clarity compared to traditional embroidery. Their tight weave structure ensures crisp definition, making them ideal for complex logos, small text, and highly detailed artwork. The lightweight yet durable nature of woven patches makes them suitable for uniforms, corporate branding, apparel, sportswear, and promotional merchandise.</p>
+
+            <p>Unlike embroidered patches, woven patches eliminate the bulky texture, providing a sleek and refined look that enhances any garment or accessory. Their smooth finish allows for precise colour matching, ensuring brand consistency across multiple applications. Whether applied to hats, jackets, bags, or uniforms, woven patches maintain their premium appearance while offering long-lasting durability. Various backing options, including iron-on, sew-on, hook & loop, and peel & stick, make them versatile for different attachment needs.</p>
+
+            <p>For businesses, organisations, and fashion brands seeking high-quality patches with exceptional detail, woven patches are the ideal choice. At NexusPatches, we provide expert craftsmanship, free design assistance, and fast delivery with low minimum order quantities. Elevate your branding with custom woven patches designed for precision, durability, and style.</p>
             <div className='row mt-3 mb-3'>
-            <div className='col-6 col-lg-6  mt-3 mb-3 col-12'>
-                <ul className="container-list">
-                  <li>Up to 8 thread colors</li>
-                  <li>Merrowed edge included</li>
-                  <li>Sew-on, iron-on, peel &amp; stick or hook &amp; loop</li>
-                  <li>Free sample photo option</li>
-                  <li>Graphic artwork assistance</li>
-                  <li>Fast turnaround &amp; delivery</li>
-              </ul>
-            </div>
-            <div className='col-6 col-lg-6 mt-3 mb-3 col-12 '>
-              <div className='container-small-content'>
-                <h3>Our Order Process</h3>
-                <ol>
-                  <li>Get your Digital Proof within 1 business day. Approve or reject your proof from your customer account.</li>
-                  <li>If Sample Photo is selected, receive it within 5 business days of approving your digital proof.</li>
-                  <li>After your approvals are complete, view your Ship Date in your customer account.</li>
-                </ol>
-              </div>
-            </div>
+            <ListItemSection />
             </div>
           </div>
           <div className="col-4 col-lg-4 col-sm-12 col-cu-12">
