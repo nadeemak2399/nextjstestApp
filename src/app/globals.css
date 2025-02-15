@@ -406,6 +406,9 @@ ul.container-list li.container-list-item {
   color: #ffffff;
   width: 50%;
 }
+.hero-banner-bg-img.about-banner p,.hero-banner-bg-img.custom-banner p {
+  width: 100%;
+}
 .hero-mask{
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;

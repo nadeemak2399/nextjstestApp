@@ -41,11 +41,6 @@ function Footer() {
                     Woven Patches
                   </Link>
                 </li>
-                <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
-                    Leather Patches
-                  </Link>
-                </li>
               </ul>
             </div>
             <div className="col-2 col-lg-2 col-sm-4 col-6 mb-4">
@@ -57,13 +52,13 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link href="/about" className="nav-link ">
+                  <Link href="/about-us" className="nav-link ">
                     About Us
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
-                    Terms & Conditions
+                  <Link href="/contact-us" className="nav-link ">
+                    Contact Us
                   </Link>
                 </li>
               </ul>
@@ -72,7 +67,7 @@ function Footer() {
               <span>Follow Us</span>
               <ul className="nav flex-column">
                 <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
+                  <Link href="https://www.facebook.com/people/Nexus-Patches/100088653961079/" className="nav-link ">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +84,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
+                  <Link href="https://www.instagram.com/nexuspatchesllc/" className="nav-link ">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +101,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link href="#" className="nav-link ">
+                  <Link href="" className="nav-link ">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -161,7 +161,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="patch-type-inner">
-                            <div className="patch-type-img"><Link href="/custom-woven-labels/"><Image width={150} height={50} src="/assets/FullEmbroideredPrintedmob.png" alt="testlogo" /></Link></div>
+                            <div className="patch-type-img"><Link href="/custom-woven-labels/"><Image width={150} height={50} src="/assets/custom-woven-labels.webp" alt="custom woven labels" /></Link></div>
                             <div className="patch-type-content">
                                 <Link href="/custom-woven-labels/"><h3>Woven Labels</h3></Link>
                                 <div className="patch-type-price">
