@@ -57,6 +57,11 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item ">
+                  <Link href="/terms-conditions" className="nav-link ">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li className="nav-item ">
                   <Link href="/contact-us" className="nav-link ">
                     Contact Us
                   </Link>
@@ -155,7 +160,7 @@ function Footer() {
             </div>
           </footer>
         </div>
-        <div className="footer-bottom-text"><p className="">Copyright © 2024 • All Rights Reserved</p></div>
+        <div className="footer-bottom-text"><p className="">Copyright © 2025 • All Rights Reserved</p></div>
       </div>
     </>
   );

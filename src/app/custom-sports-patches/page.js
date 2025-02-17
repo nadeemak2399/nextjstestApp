@@ -3,7 +3,7 @@ import ImageGallery from '@/app/components/ImageGallery';
 import ListItemSection from '../components/ListItemSection';
 
 export const metadata = {
-  title: "Custom Sports Patches",
+  title: "Custom Sports Patches UK for Teams & Clubs",
   description: "Sports Patches",
 }
 
@@ -16,13 +16,13 @@ function Page() {
         <div className="row align-items-start  mt-5 mb-5">
           <div className="col-8 col-lg-8 col-sm-12 col-cu-12">
             <h1 className='pageTitle'>
-            Sports Patches
+            Custom Sports Patches
             </h1>
               <p>
-              It's hard to beat the traditional good looks of an embroidered patch. The raised polyester thread offers a 3-dimensional sheen and bold appearance. Custom embroidered patches are used in a wide range of applications, from police and fire department uniforms to caps, beanies, jackets and other outerwear. They include a plastic backing for durability and up to 8 thread colors. They can be laser cut or finished with a customary merrowed border. We also offer a Hook & Loop backing option (like Velcro) for military style patches. Iron on patches or peel & stick patches are also available options.
+              Need high-quality custom sports patches in the UK? We create high-quality embroidered, woven, and printed patches for team uniforms, jerseys, caps, and bags. Our durable and washable sports patches come with iron-on, sew-on, or Velcro backing for easy application.
             </p>
             <p>
-              Upload your finished embroidered patch design or just a simple logo. Our team will help finalize your patch design and send you a digital proof within one business day. You may approve it or make changes if necessary before production begins. A team member will be assigned to your order in case you have any questions. 
+            Perfect for football, rugby, cricket, cycling and other teams, our patches are customisable in any shape, size, and colour to match your team’s identity. Whether you need player name patches, club logos, or event badges, we ensure fast turnaround and premium quality.
             </p>
             <div className='row mt-3 mb-3'>
             <ListItemSection />

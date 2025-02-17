@@ -22,7 +22,7 @@ export async function POST(request) {
 
         const mailOption = {
             from: "nexuspathesuk@gmail.com",
-            to: "robertbob9988@gmail.com",
+            to: "sales@nexuspatches.com",
             subject: replacefullName + " " + quotePageType + " " + "Quote UK",
             html: `
                 <h2>${quotePageType} Form</h2>

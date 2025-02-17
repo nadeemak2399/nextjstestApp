@@ -1,7 +1,7 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
 import ListItemSection from '@/app/components/ListItemSection';
-
+import Link from 'next/link'
 export const metadata = {
   title: "Custom Embroidered Patches",
   description: "Design custom embroidered patches with the UK's top patch maker. Choose from iron-on, sew-on, and hook & loop backing options, with free shipping and low minimum orders.",
@@ -16,9 +16,9 @@ function Page() {
         <div className="row align-items-start  mt-5 mb-5">
           <div className="col-8 col-lg-8 col-sm-12 col-cu-12">
             <h1 className='pageTitle'>
-              Embroidered Patches
+            Custom Embroidered Patches
             </h1>
-              <p>Looking for embroidered patches in the UK? At Nexus Patches, we specialise in creating custom embroidered patches tailored to your needs. Whether you need patches in bulk online, individual designs for jackets, caps or hats, or uniforms, or custom patches for clothing backed with premium materials, we’ve got you covered.</p>
+              <p>Looking for embroidered patches in the UK? At Nexus Patches, we specialise in creating custom embroidered patches tailored to your needs. Whether you need patches in bulk online, individual designs for jackets, caps or hats, or uniforms, or <Link className="nav-link" href="https://nexuspatches.co.uk/">custom patches</Link> for clothing backed with premium materials, we’ve got you covered.</p>
 
               <p>Our expert patch creators use high-quality fabric badges and a high stitch count to craft embroidered badge making solutions that stand out. You can design your patches in any shape, size, or colour, and we’ll ensure the backed with your desired type of finishing. Choose from options like laser cut or finished with a classic merrowed border, or go for heat-and-seal, hook & loop backing option, iron-on patches, Velcro patches, or sew-on patches for ease of application and long-lasting durability.</p>
 

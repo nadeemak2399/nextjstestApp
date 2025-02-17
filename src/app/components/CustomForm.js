@@ -317,21 +317,21 @@ function CustomForm({formPageType}) {
         <div className='container-backing-type'>
             <span className='steps-heading'> Step 4: Backing Options</span>
                 <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6 ">
-                    <input onChange={onOptionChange} value="Iron-on-Backing" className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Iron-on-Backing"}/>
+                    <input onChange={onOptionChange} value="Iron-on-Backing" className="form-check-input" type="radio" name="backingType" id="ironOnBacking" checked={backingType === "Iron-on-Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/iron-on-backing.webp" alt="Iron On Backing" />
                         <label className="form-check-label" htmlFor="ironOnBacking">Iron On Backing</label>
                     </div>
                 </div>
                 <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
-                    <input onChange={onOptionChange} value="Sew On Backing" className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Sew On Backing"}/>
+                    <input onChange={onOptionChange} value="Sew On Backing" className="form-check-input" type="radio" name="backingType" id="SewOnBacking" checked={backingType === "Sew On Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/No-backing.webp" alt="Sew On Backing" />
                         <label className="form-check-label" htmlFor="SewOnBacking">Sew On Backing</label>
                     </div>
                 </div>
                 <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
-                    <input onChange={onOptionChange} value="Velcro Hook n Loop"  className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Velcro Hook n Loop"}/>
+                    <input onChange={onOptionChange} value="Velcro Hook n Loop"  className="form-check-input" type="radio" name="backingType" id="VelcroBacking" checked={backingType === "Velcro Hook n Loop"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/hook-and-loop.webp" alt="Velcro Hook & Loop" />
                         <label className="form-check-label" htmlFor="VelcroBacking">Velcro Hook & Loop
@@ -339,18 +339,18 @@ function CustomForm({formPageType}) {
                     </div>
                 </div>
                 <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
-                    <input onChange={onOptionChange} value="Velcro Hook Backing"  className="form-check-input" type="radio" name="backingType" id={backingType} checked={backingType === "Velcro Hook Backing"}/>
+                    <input onChange={onOptionChange} value="Velcro Hook Backing"  className="form-check-input" type="radio" name="backingType" id="VelcroHookBacking" checked={backingType === "Velcro Hook Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/hook-backing.webp" alt="Velcro Hook Backing" />
-                        <label className="form-check-label" htmlFor="VelcroBacking">Velcro Hook Backing
+                        <label className="form-check-label" htmlFor="VelcroHookBacking">Velcro Hook Backing
                         </label>
                     </div>
                 </div>
                 <div className="input-container col-lg-3 col-md-4 col-xs-4 col-6">
-                    <input onChange={onOptionChange} value="Velcro Loop Backing" className="form-check-input" type="radio" name="backingType" id={backingType}  checked={backingType === "Velcro Loop Backing"}/>
+                    <input onChange={onOptionChange} value="Velcro Loop Backing" className="form-check-input" type="radio" name="backingType" id="VelcroLoopBacking"  checked={backingType === "Velcro Loop Backing"}/>
                     <div className='radio-title'>
                     <Image width={150} height={50} src="/assets/loop-backing.webp" alt="Velcro Loop Backing" />
-                        <label className="form-check-label" htmlFor="VelcroBacking">Velcro Loop Backing
+                        <label className="form-check-label" htmlFor="VelcroLoopBacking">Velcro Loop Backing
                         </label>
                     </div>
                 </div>

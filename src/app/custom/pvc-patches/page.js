@@ -1,7 +1,7 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
 import ListItemSection from '@/app/components/ListItemSection';
-
+import Link from 'next/link';
 
 export const metadata = {
   title: "Custom PVC Patches",
@@ -17,13 +17,13 @@ function Page() {
         <div className="row align-items-start  mt-5 mb-5">
           <div className="col-8 col-lg-8 col-sm-12 col-cu-12">
             <h1 className='pageTitle'>
-            PVC Patches
+            Custom PVC Patches
             </h1>
             <p>Looking for high-quality PVC patches that stand the test of time? Our custom PVC patches are designed for branding and promotion, military and forces, and clothing and accessories. These weather-resistant and waterproof patches maintain their shape and colour in any condition.</p>
 
               <p>Our PVC patches for jackets, hats, and bags offer a unique design that ensures your logo or artwork stands out. We use sculpted texture 3D look to give depth and precision to every detail. Whether you need PVC patches with Velcro, iron-on, or sew-on backing, we provide multiple options to fit your needs.</p>
 
-              <p>No need to search for PVC patches near me we deliver fast shipping in UK with low minimum order required. Our custom artwork for free service means you can send your ideas, and we’ll bring them to life at no extra cost. With fully personalised designs, you get the freedom to create exactly what you envision. Order now and enjoy affordable prices, premium quality, and quick delivery!</p>
+              <p>No need to search for PVC patches near me we deliver fast shipping in UK with low minimum order required. Our custom artwork for free service means you can send your ideas, and we’ll bring them to life at no extra cost. With fully personalised designs, you get the freedom to create exactly what you envision. Enjoy premium quality, fast delivery, and budget-friendly rates on <Link className="nav-link" href="https://nexuspatches.co.uk/">Nexus Patches</Link> order today!</p>
             <div className='row mt-3 mb-3'>
             <ListItemSection/>
             </div>

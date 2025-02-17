@@ -149,7 +149,7 @@ export default function Home() {
                     </div>
                     <div className="col-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div className="image-container-home">
-                            <Image width={150} height={50} src="/assets/Custom-Patches-in-UK.webp" alt="Custom Patches UK" />
+                            <img src="/assets/Custom-Patches-in-UK.webp" alt="Custom Patches UK" />
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import CustomForm from '@/app/components/CustomForm';
 import ImageGallery from '@/app/components/ImageGallery';
 import ListItemSection from '@/app/components/ListItemSection';
-
+import Link from 'next/link';
 export const metadata = {
   title: "Custom Printed Patches | Full-Colour Dye Sublimation",
   description: "Order custom printed patches with photorealistic designs and vibrant colours. Multiple backing options available. Fast turnaround & free delivery.",
@@ -22,7 +22,7 @@ function Page() {
 
             <p>Perfect for fashion, corporate branding, uniforms, and promotional merchandise, printed patches offer unlimited colour options for striking visual appeal. With multiple backing choices, including iron-on, sew-on, peel-and-stick, and hook & loop, they ensure seamless application on any fabric. Crafted from premium materials, our patches maintain long-lasting colour brilliance and durability without fading or cracking.</p>
 
-            <p>At NexusPatches, we guarantee precision, quality, and fast turnaround times. Whether you need single-unit production or bulk orders, our expert team ensures flawless execution. Order today for free shipping across the UK, and bring your custom designs to life with superior printed patches.</p>
+            <p>At <Link className="nav-link" href="https://nexuspatches.co.uk/">NexusPatches</Link>, we guarantee precision, quality, and fast turnaround times. Whether you need single-unit production or bulk orders, our expert team ensures flawless execution. Order today for free shipping across the UK, and bring your custom designs to life with superior printed patches.</p>
             <div className='row mt-3 mb-3'>
               <ListItemSection/>
             </div>
